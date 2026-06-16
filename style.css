@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+}
+
+.titulo-logo {
+  position: absolute;
+  width: 500px;
+
+  left: 50px;
+  top: 50px;
+
+  z-index: 10;
+}
+
+
+/* BOTÓN 1 */
+#btn1 {
+  position: absolute;
+
+  width: 110px; /* tamaño */
+
+  left: 890px;  /* posición horizontal */
+  top: 700px;   /* posición vertical */
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+/* BOTÓN 2 */
+#btn2 {
+  position: absolute;
+
+  width: 110px;
+
+  left: 1650px;
+  top: 400px;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+/* BOTÓN 3 */
+#btn3 {
+  position: absolute;
+
+  width: 110px;
+
+  left: 200px;
+  top: 400px;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+/* MODELO 3D */
+.modelo {
+  position: absolute;
+
+  width: 600px;   /* ancho */
+  height: 600px;  /* alto */
+
+  left: 50%;
+  top: 40%;
+
+  transform: translate(-50%, -50%);
+}
