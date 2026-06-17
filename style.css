@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ===================== */
+/* LOGO */
+/* ===================== */
+.titulo-logo {
+  position: absolute;
+  width: 18vw;
+  height: auto;
+
+  left: 3vw;
+  top: 3vh;
+
+  z-index: 10;
+}
+
+/* ===================== */
+/* BOTONES BASE */
+/* ===================== */
+#btn1, #btn2, #btn3 {
+  position: absolute;
+  width: 7vw;
+  height: auto;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* ===================== */
+/* POSICIONES ESCENOGRÁFICAS */
+/* (convertidas desde tu layout original) */
+/* ===================== */
+
+#btn1 {
+  left: 55vw;
+  top: 70vh;
+}
+
+#btn2 {
+  left: 78vw;
+  top: 38vh;
+}
+
+#btn3 {
+  left: 12vw;
+  top: 40vh;
+}
+
+/* ===================== */
+/* MODELO 3D */
+/* ===================== */
+.modelo {
+  position: absolute;
+
+  width: 40vw;
+  height: 60vh;
+
+  left: 50%;
+  top: 55%;
+
+  transform: translate(-50%, -50%);
+}
