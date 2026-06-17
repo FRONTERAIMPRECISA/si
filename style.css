@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ===================== */
+/* LOGO */
+/* ===================== */
+.titulo-logo {
+  position: absolute;
+  width: clamp(120px, 18vw, 260px);
+  height: auto;
+
+  left: clamp(10px, 3vw, 40px);
+  top: clamp(10px, 3vh, 40px);
+
+  z-index: 10;
+}
+
+/* ===================== */
+/* BOTONES BASE */
+/* ===================== */
+#btn1, #btn2, #btn3 {
+  position: absolute;
+
+  width: clamp(60px, 7vw, 120px);
+  height: auto;
+
+  cursor: pointer;
+  z-index: 10;
+
+  transform: translate(-50%, -50%);
+}
+
+/* ===================== */
+/* POSICIONES ESCENOGRÁFICAS */
+/* ===================== */
+
+#btn1 {
+  left: clamp(120px, 55vw, 900px);
+  top: clamp(120px, 70vh, 700px);
+}
+
+#btn2 {
+  left: clamp(120px, 78vw, 1100px);
+  top: clamp(120px, 38vh, 500px);
+}
+
+#btn3 {
+  left: clamp(120px, 12vw, 300px);
+  top: clamp(120px, 40vh, 500px);
+}
+
+/* ===================== */
+/* MODELO 3D */
+/* ===================== */
+.modelo {
+  position: absolute;
+
+  width: clamp(220px, 40vw, 700px);
+  height: clamp(220px, 60vh, 700px);
+
+  left: 50%;
+  top: 55%;
+
+  transform: translate(-50%, -50%);
+}
