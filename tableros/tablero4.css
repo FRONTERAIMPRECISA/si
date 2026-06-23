@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background: #111;
+  overflow: hidden;
+}
+
+/* ===== IMÁGENES ===== */
+.foto {
+  position: absolute;
+  cursor: grab;
+  user-select: none;
+  z-index: 1;
+
+  transform: scale(0.25);
+  transform-origin: top left;
+}
+
+.foto:active {
+  cursor: grabbing;
+}
+
+/* ===== TEXTO DE FONDO ===== */
+#background-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-line {
+  position: absolute;
+  color: #8c8b8b;
+  font-family: Roboto, sans-serif;
+  font-size: 38px;
+  white-space: nowrap;
+}
+
+/* POSICIONES EDITABLES */
+#line1 { left: 1090px; top: 680px; }
+#line2 { left: 400px; top: 440px; }
+#line3 { left: 200px; top: 300px; }
+#line4 { left: 1080px; top: 140px; }
