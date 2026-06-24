@@ -28,26 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "tableros/tablero3.html";
   };
 
-  // MODELO
   const modelo = document.getElementById("modelo");
 
-  modelo.removeAttribute("auto-rotate");
-
-  modelo.addEventListener("mouseenter", () => {
-    modelo.setAttribute("auto-rotate", "");
-  });
-
-  modelo.addEventListener("mouseleave", () => {
-    modelo.removeAttribute("auto-rotate");
-  });
-
-  // 🔥 CLICK → transición a introducción
+  // interacción libre
   modelo.addEventListener("click", () => {
-    scene.classList.add("zooming");
-
-    setTimeout(() => {
-      window.location.href = "tableros/introduccion.html";
-    }, 600);
+    window.location.href = "tableros/introduccion.html";
   });
 
 });
