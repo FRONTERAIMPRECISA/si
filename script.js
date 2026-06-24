@@ -31,8 +31,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // MODELO
   const modelo = document.getElementById("modelo");
 
+  modelo.removeAttribute("auto-rotate");
+
+  modelo.addEventListener("mouseenter", () => {
+    modelo.setAttribute("auto-rotate", "");
+  });
+
+  modelo.addEventListener("mouseleave", () => {
+    modelo.removeAttribute("auto-rotate");
+  });
+
+  // 🔥 CLICK → transición a introducción
   modelo.addEventListener("click", () => {
-    window.location.href = "tableros/introduccion.html";
+    scene.classList.add("zooming");
+
+    setTimeout(() => {
+      window.location.href = "tableros/introduccion.html";
+    }, 600);
   });
 
 });
