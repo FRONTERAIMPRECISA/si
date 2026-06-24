@@ -4,6 +4,31 @@ body {
   overflow: hidden;
 }
 
+/* BOTÓN VOLVER */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 50px;
+
+  opacity: 0.8;
+  transition: 0.2s ease;
+
+  z-index: 999;
+}
+
+.back-button:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.back-button img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* 🔴 CLAVE: base fija + escala automática */
 #stage {
   position: relative;
