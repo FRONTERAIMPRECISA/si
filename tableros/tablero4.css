@@ -4,10 +4,37 @@ body {
   overflow: hidden;
 }
 
+/* BOTÓN VOLVER */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 50px;
+
+  opacity: 0.8;
+  transition: 0.2s ease;
+
+  z-index: 999;
+}
+
+.back-button:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.back-button img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🔴 CLAVE: sistema estable global */
 #stage {
   position: relative;
   width: 1920px;
   height: 1080px;
+
   transform-origin: top left;
   transform: scale(var(--scale));
 }
@@ -18,7 +45,7 @@ body {
   user-select: none;
   z-index: 1;
 
-  /* 👇 ACÁ ESTÁ TU “0.25” ORIGINAL */
+  /* escala individual de las imágenes */
   transform: scale(0.25);
   transform-origin: top left;
 }
