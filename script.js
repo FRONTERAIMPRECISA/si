@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "tableros/tablero3.html";
   };
 
+  // MODELO
   const modelo = document.getElementById("modelo");
 
-  // interacción libre
   modelo.addEventListener("click", () => {
     window.location.href = "tableros/introduccion.html";
   });
